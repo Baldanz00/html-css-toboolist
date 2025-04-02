@@ -1,0 +1,12 @@
+/*regole di reset*/
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*HEAD*/
+/*logo*/
+.logo{
+    vertical-align: middle;
+}
