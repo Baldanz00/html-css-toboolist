@@ -3,35 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toboolist</title>
-    <!--link css-->
-    <link rel="stylesheet" href="styles.css">
-    <img src="./img/Toboolist-logo.jpg" alt="Toboolist-logo" class="logo">
-    <!-- FONT TITLE-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brocolage+Grotesque&family=Marian+Mono:wght@700&display=swap%22">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap%22">
+    <title>ToBooList - Esercizio #4 - Boolean Classe #137</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/app.css">
 </head>
 <body>
+    
     <header>
-        <img src="./img/Toboolist-logo.jpg" alt="Toboolist-logo" class="logo">
-        <h1 class="title"> Toboolist </h1>
+        <div class="fullsizeheader">
+            <div class="logocontainer">
+                <img src="./img/Toboolist-logo.jpg" alt="TobooList Logo">
+                <h1 class="logotitle">Toboolist</h1>
+            </div>
+        </div>
     </header>
-    <main>
-        <!-- bottoni-->
-        <div class="button"></div>
-        <button id="task">add task</button>
-        <button id="secton">add section</button>
-        <div class="task-container"></div>
-        <section>
-            <h2 class="sec-title">&#x25BC; New task</h2>
-            <div class="cerchio-green">&check;</div>
-            <span>Quaterly newsletter</span>
-            <div class="fake-button editorial">Editorial</div>
+
+    <main class="container">
+        <section id="actionsbar">
+            <button class="active">Add Task</button>
+            <button class="inactive">Add Section</button>
         </section>
+
+        <!-- Tasklist  -->
+        <section id="tasklist">
+            <ul>
+                <li>
+                    <span class="category">New Task</span>
+                    <ul>
+                        <li class="task completed pin editorial">Quarterly Newsletter</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="category">Today</span>
+                    <ul>
+                        <li class="task completed editorial">Recruiting blog post</li>
+                        <li class="task completed q1_goals">Mobile app launch</li>
+                        <li class="task uncompleted recruiting">Interview John H.</li>
+                        <li class="task completed mobile">Summit update to mobile storefronts</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="category">Upcoming</span>
+                    <ul>
+                        <li class="task uncompleted">Schedule meeting with Alex</li>
+                        <li class="task completed website">Homepage Refresh</li>
+                        <li class="task completed sales">Onboard new Sales team members</li>
+                        <li class="task completed editorial">Review editorial calendar</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /Tasklist  -->
     </main>
+
+    <!-- Footer Non richiesto dall'esercizio 
+    <div class="exercise-footer">
+        <a href="https://boolean.careers"><img class="boolean-logo" src="https://lwfiles.mycourse.app/6368e5089f20781a7e4f1805-public/2c162927114072f9ebbf04043a593fb9.png" alt="Boolean Logo"></a>
+        <p>
+            <strong>Questa pagina rappresenta un esercizio per il corso Full Stack Web Developer</strong> - Studente: <strong class="highlighted">Fabio Ferrero</strong> - Classe <strong class="highlighted">#137</strong>
+        </p>
+    </div> -->
+
 </body>
 </html>

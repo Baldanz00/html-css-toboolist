@@ -1,12 +1,191 @@
 /*regole di reset*/
-*{ 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-/*HEAD*/
-/*logo*/
-.logo{
+
+body {
+    font-family:'Montserrat', sans-serif;
+    background-color: #f2f6f8;
+}
+
+main {
+    padding-bottom:30px;
+}
+
+/* -------------- Utility --------------  */
+.container {
+    max-width:900px;
+    margin: 80px auto;
+    background:white;
+    border-radius:1rem;
+}
+
+/* ------------- Header Styling -------------- */
+.fullsizeheader {
+    background-color: white;
+    width:100%;
+    padding:20px 20px;
+}
+
+.logocontainer img,
+.logocontainer .logotitle {
+    vertical-align:middle;
+}
+
+.logocontainer .logotitle {
+    display:inline-block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#031732;
+    margin-left:5px;
+    letter-spacing: -.05rem;
+}
+
+#actionsbar,
+#tasklist {
+    padding: 20px 40px;
+}
+
+/* ------------ Actions Bar ------------  */
+#actionsbar {
+    border-bottom: 2px solid #f2f6f8;
+}
+
+#actionsbar button {
+    padding:5px;
+    font-weight:600;
+    font-size: 0.75rem;
+    border-radius:10%;
+    border-style: solid;
+}
+
+#actionsbar .active {
+    background-color: #4dabe2;
+    color:white;
+    border-color: #4dabe2;
+}
+
+#actionsbar .inactive {
+    background-color: #ffffff;
+    color:lightgrey;
+    border-color: lightgrey;
+}
+
+/* ------------ Task List ------------  */
+
+#tasklist ul{
+    list-style: none;
+}
+
+#tasklist .category{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#tasklist .category::before {
+    content:'\25BE';
+    margin-right:5px;
+}
+
+#tasklist .task {
+    padding: 20px 20px;
+}
+
+/* --------------- Task Categories ---------------- */
+#tasklist .task::after {
+    margin-left: 10px;
+    font-size: 0.7rem;
+    color:white;
+    padding: 5px 12px;
+    border-radius:2rem;
+}
+
+#tasklist .task.editorial::after {
+    content:"Editorial";
+    background-color: #4dabe2;
+}
+
+#tasklist .task.q1_goals::after {
+    content:"Q1 Goals";
+    background-color: #9b72e4;
+}
+
+#tasklist .task.recruiting::after {
+    content:"Recruiting";
+    background-color: #6dbea7;
+}
+
+#tasklist .task.mobile::after {
+    content:"Mobile";
+    background-color: #f99a38;
+}
+
+#tasklist .task.website::after {
+    content:"Website";
+    background-color: #db63a1;
+}
+
+#tasklist .task.sales::after {
+    content:"Sales";
+    background-color: #b0c92d;
+}
+
+#tasklist .task::before {
+    display:inline-block;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    font-size:0.8rem;
+}
+
+#tasklist .task.completed::before {
+    content:'\2713';
+    color:green;
+    border:1px solid green;
+}
+
+#tasklist .task.uncompleted::before {
+    content:'\292B';
+    color:red;
+    border:1px solid red;
+}
+
+/* Footer Non richiesto dall'esercizio */
+.exercise-footer {
+    position:fixed;
+    width:100%;
+    bottom:0;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.5rem 20%;
+    background-color: #eaedf0;
+    color:#031732;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+
+.exercise-footer p {
+    display: inline-block;
+    font-size:0.7rem;
+    margin-left: 10px;
+}
+
+.exercise-footer .highlighted{
+    background-color: #d9ff66;
+    border-radius:0.5rem;
+    padding:2px 5px;
+}
+
+.exercise-footer .boolean-logo {
+    display: inline-block;
     vertical-align: middle;
+    height:30px;
+}
+
+.exercise-footer .boolean-logo:hover {
+    transform:scale(1.05)
 }
